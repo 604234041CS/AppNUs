@@ -1,0 +1,38 @@
+<!--
+  Generated template for the BarcodePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+      <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>BarcodeScanner</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <button ion-button round color="secondary" block (click)="scanner()">
+        <ion-icon name="Barcode"></ion-icon>&nbsp; Barcode Scanner
+      </button>
+      <ion-card>
+        <ion-card-header>
+          Barcode Format
+        </ion-card-header>
+        <ion-card-content>
+          {{scanFormat}}
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-header>
+          Barcode TEXT
+        </ion-card-header>
+        <ion-card-content>
+          {{scanText}}
+        </ion-card-content>
+      </ion-card>
+      
+      
+</ion-content>
