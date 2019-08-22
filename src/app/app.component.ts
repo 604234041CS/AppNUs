@@ -1,3 +1,4 @@
+import { JsonMenuPage } from './../pages/json-menu/json-menu';
 import { BatteryStatusPage } from './../pages/battery-status/battery-status';
 import { FlashlightPage } from './../pages/flashlight/flashlight';
 import { BarcodePage } from './../pages/barcode/barcode';
@@ -31,6 +32,7 @@ export class MyApp {
       {title: 'Barcode', component: BarcodePage, icon: 'barcode'},
       {title: 'Flashlight', component: FlashlightPage, icon: 'flash'},
       {title: 'Battery', component: BatteryStatusPage, icon: 'Status'},
+      {title: 'JsonMenu', component: JsonMenuPage, icon: 'book'},
     ];
 
   }

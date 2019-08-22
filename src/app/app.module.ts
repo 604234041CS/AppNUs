@@ -1,3 +1,5 @@
+
+import { JsonMenuPage } from './../pages/json-menu/json-menu';
 import { BatteryStatusPage } from './../pages/battery-status/battery-status';
 import { FlashlightPage } from './../pages/flashlight/flashlight';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
@@ -21,7 +23,7 @@ import { BatteryStatus } from '@ionic-native/battery-status';
   declarations: [
     MyApp,
     HomePage,
-    ListPage,LoginPage,BarcodePage,FlashlightPage,BatteryStatusPage,
+    ListPage,LoginPage,BarcodePage,FlashlightPage,BatteryStatusPage,JsonMenuPage,
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,7 @@ import { BatteryStatus } from '@ionic-native/battery-status';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage,LoginPage,BarcodePage,FlashlightPage,BatteryStatusPage,
+    ListPage,LoginPage,BarcodePage,FlashlightPage,BatteryStatusPage,JsonMenuPage,
   ],
   providers: [
     StatusBar,
