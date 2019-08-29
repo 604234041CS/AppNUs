@@ -1,4 +1,4 @@
-
+import {HttpClientModule} from '@angular/common/http/';
 import { JsonMenuPage } from './../pages/json-menu/json-menu';
 import { BatteryStatusPage } from './../pages/battery-status/battery-status';
 import { FlashlightPage } from './../pages/flashlight/flashlight';
@@ -28,6 +28,7 @@ import { BatteryStatus } from '@ionic-native/battery-status';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    HttpClientModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [

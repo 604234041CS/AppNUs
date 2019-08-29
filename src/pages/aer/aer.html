@@ -6,10 +6,29 @@
 -->
 <ion-header>
   <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
     <ion-title>GET ARRAY JSON</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-
+  <ion-card *ngFor="let myG of gameAr">
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="http://localhost/shop/img/{{myG.game_img}}">
+      </ion-avatar>
+      <h2>Name : {{myG.game_name}}</h2>
+      
+      <p>Price : {{myG.game_price}}</p>
+    </ion-item>
+    <ion-avatar item-left>
+      <img src="http://localhost/shop/img/{{myG.game_img}}">
+    </ion-avatar>
+    <ion-card-content>
+      <h2>Detail :</h2>
+      <p> {{myG.game_detail}}</p>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
