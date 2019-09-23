@@ -1,3 +1,4 @@
+import { MovieAppPage } from './../pages/movie-app/movie-app';
 import {HttpClientModule} from '@angular/common/http/';
 import { JsonMenuPage } from './../pages/json-menu/json-menu';
 import { BatteryStatusPage } from './../pages/battery-status/battery-status';
@@ -19,11 +20,13 @@ import { BatteryStatus } from '@ionic-native/battery-status';
 
 
 
+
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     ListPage,LoginPage,BarcodePage,FlashlightPage,BatteryStatusPage,JsonMenuPage,
+    MovieAppPage,
   ],
   imports: [
     BrowserModule,
@@ -35,6 +38,7 @@ import { BatteryStatus } from '@ionic-native/battery-status';
     MyApp,
     HomePage,
     ListPage,LoginPage,BarcodePage,FlashlightPage,BatteryStatusPage,JsonMenuPage,
+  MovieAppPage,
   ],
   providers: [
     StatusBar,

@@ -1,3 +1,4 @@
+import { MovieAppPage } from './../pages/movie-app/movie-app';
 import { JsonMenuPage } from './../pages/json-menu/json-menu';
 import { BatteryStatusPage } from './../pages/battery-status/battery-status';
 import { FlashlightPage } from './../pages/flashlight/flashlight';
@@ -33,6 +34,7 @@ export class MyApp {
       {title: 'Flashlight', component: FlashlightPage, icon: 'flash'},
       {title: 'Battery', component: BatteryStatusPage, icon: 'Status'},
       {title: 'JsonMenu', component: JsonMenuPage, icon: 'book'},
+      {title: 'MovieApp', component: MovieAppPage, icon: 'videocam'},
     ];
 
   }
